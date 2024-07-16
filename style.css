@@ -1,0 +1,36 @@
+p::first-letter{
+    color: red;
+    
+}
+
+h1::first-letter{
+  color: blue;
+ font-size: 5rem;
+}
+p::first-line{
+color: yellow;
+}
+
+li{
+    list-style:none;
+    position: relative;
+}
+
+li::before{
+    content: '';
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./faca-francesa.png);
+    left:60px;
+    bottom: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+
+}
+p::selection{
+    background-color: rgb(247, 0, 255);
+    color: orange;
+}
